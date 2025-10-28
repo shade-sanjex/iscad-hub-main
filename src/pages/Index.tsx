@@ -6,7 +6,7 @@ import { Footer } from '@/components/Footer';
 import { BookOpen, Target, Users, TrendingUp, Mail, Phone } from 'lucide-react';
 import heroImage from '@/assets/hero-agriculture.jpg';
 import iscadLogo from '@/assets/iscad-logo.png';
-import { EditorialBoard } from './hayat';
+import { EditorialBoard } from '@/components/EditorialBoard';
 
 const Index = () => {
   return (
