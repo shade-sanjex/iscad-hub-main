@@ -26,6 +26,20 @@ export function Navbar() {
       >
         Markaz haqida
       </Link>
+      <a 
+       
+        className="text-foreground hover:text-primary transition-colors block py-2"
+        href='#hayat'
+      >
+        Tahrir hay'ati
+      </a>
+      <a 
+        
+        className="text-foreground hover:text-primary transition-colors block py-2"
+       href='#talablar'
+      >
+        Jurnal talablari
+      </a>
       <Link 
         to="/journals" 
         className="text-foreground hover:text-primary transition-colors block py-2"

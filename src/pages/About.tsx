@@ -24,12 +24,14 @@ const About = () => {
           </div>
         </section>
 
+
         {/* About Content */}
         <section className="py-12 md:py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-bold mb-6">Markaz Haqida</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6">"AGROIQTISODIYOT" JURNALI</h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                "AGROIQTISODIYOT" ilmiy-amaliy agrar iqtisodiy jurnali 2017 yil iyun oyidan boshlab nashr etila boshlandi. Unda iqtisodiyot mavzusidagi maqolalar bilan qatnashish mumkin. Jurnal har chorakda bir marotaba chop etiladi. Bayramlar, ilmiy-amaliy anjumanlar va yubileyllar munosabati bilan jurnalning maxsus soni ham chop etilishi mumkin.
                 Oziq-ovqat va Qishloq Xo'jaligi Sohasida Strategik Rivojlanish va Tadqiqotlar Xalqaro Markazi (ISCAD) 
                 O'zbekiston Respublikasi Qishloq xo'jaligi vazirligi huzuridagi davlat tashkiloti hisoblanadi. 
                 Markaz O'zbekiston qishloq xo'jaligi sektoridagi islohotlarni qo'llab-quvvatlash, oziq-ovqat xavfsizligini 

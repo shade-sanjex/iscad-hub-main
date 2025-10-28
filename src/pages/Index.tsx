@@ -3,9 +3,10 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
-import { BookOpen, Target, Users, TrendingUp } from 'lucide-react';
+import { BookOpen, Target, Users, TrendingUp, Mail, Phone } from 'lucide-react';
 import heroImage from '@/assets/hero-agriculture.jpg';
 import iscadLogo from '@/assets/iscad-logo.png';
+import { EditorialBoard } from './hayat';
 
 const Index = () => {
   return (
@@ -114,6 +115,7 @@ const Index = () => {
           </div>
         </div>
       </section>
+      <EditorialBoard />
 
       {/* CTA Section */}
       <section className="py-12 md:py-20 bg-gradient-to-r from-primary to-accent text-white">
@@ -127,6 +129,57 @@ const Index = () => {
               Jurnallarni o'qish
             </Button>
           </Link>
+        </div>
+      </section>
+
+      {/* Journal Requirements Section */}
+      <section id='talablar' className="py-12 md:py-20 bg-gradient-to-b from-background to-muted">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
+              Jurnal Talablari
+            </h2>
+            <div className="h-1 w-24 bg-primary mx-auto rounded-full" />
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <Card className="border-2 border-primary/20 shadow-xl">
+              <CardContent className="pt-6">
+                <ul className="space-y-6 divide-y divide-border">
+                  {[
+                    "Maqolalar o'zbek, rus va ingliz tillarida qabul qilinadi. Maqolaning hajmi shakllar va adabiyotlar ro'yxati bilan birgalikda 8-10 betdan kam bo'lmasligi kerak.",
+                    "Maqolalar Microsoft Word dasturida terilgan bo'lishi, qog'oz o'lchami A4 format, matn Times New Roman shriftida, o'lcham 14 pt, qatorlar orasi 1.5 interval, sahifa chetlari: yuqoridan - 2 sm, pastdan - 2 sm, chap - 3 sm, o'ng - 1.5 sm bo'lishi lozim.",
+                    "Maqolada jadvallar, rasmlar va diagrammalar bo'lishi mumkin. Jadvallar tartib raqami va nomi jadval tepasida, illustratsiyalar (rasmlar, diagrammalar) sarlavhasi esa tagida ko'rsatilishi kerak.",
+                    "Adabiyotlar ro'yxati maqola oxirida beriladi. Maqola ichida havolalar kvadrat qavsda beriladi. Masalan: [1], [2, 5], [3-7]. Adabiyotlar ro'yxati maqolada ishlatilgan tartibda keltiriladi.",
+                    "Maqolada UDK indeksi, maqola nomi, mualliflar F.I.SH., tashkilot nomi, annotatsiya (150-200 so'z) va kalit so'zlar (6-8 ta) bo'lishi shart. Maqola nomidan so'ng qisqacha annotatsiya va kalit so'zlar o'zbek, rus va ingliz tillarida berilishi kerak.",
+                    "Mualliflar haqida ma'lumot (F.I.SH., ilmiy darajasi va unvoni, ish joyi, lavozimi, telefon va elektron pochta) alohida sahifada keltiriladi.",
+                    "Taqdim etilgan maqolalar tahrir qilinadi va plagiatga tekshiriladi. Zarur hollarda maqola qayta ishlab chiqish uchun muallifga qaytarilishi mumkin."
+                  ].map((item, index) => (
+                    <li key={index} className="pt-6 first:pt-0">
+                      <div className="flex items-start space-x-3">
+                        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-2 border-primary text-sm font-medium">
+                          {index + 1}
+                        </span>
+                        <span className="text-muted-foreground">{item}</span>
+                      </div>
+                    </li>
+                  ))}
+
+                  <div className="mt-8 pt-6 border-t border-border">
+                    <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-muted-foreground">
+                      <div className="flex items-center gap-2">
+                        <Mail className="h-4 w-4 text-primary" />
+                        <span>ooqxssrtxm@agro.uz</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Phone className="h-4 w-4 text-primary" />
+                        <span>(+0371) 2605230, 2605261</span>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 

@@ -29,15 +29,15 @@ export function Footer() {
             <ul className="space-y-2 text-muted-foreground">
               <li className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
-                <span>Toshkent, O'zbekiston</span>
+                <span>100140, Toshkent viloyati, Kibriy tumani, Universitet ko'chasi, 2-uy.</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>+998 71 202 00 99</span>
+                <span>(+0371) 2605230, 2605261</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>info@iscad.uz</span>
+                <span>ooqxssrtxm@agro.uz</span>
               </li>
             </ul>
           </div>
